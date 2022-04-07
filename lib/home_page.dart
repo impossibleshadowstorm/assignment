@@ -292,16 +292,15 @@ class _MyHomePageState extends State<MyHomePage> {
       );
 
   final items = ["Male", "Gender"];
-  String? value;
+  String? gender;
 
   DropdownMenuItem<String> buildGender(String item) => DropdownMenuItem(
         value: item,
         child: Text(
           item,
           style: const TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 20,
-          ),
+              // fontWeight: FontWeight.bold,
+              ),
         ),
       );
 
@@ -322,6 +321,7 @@ class _MyHomePageState extends State<MyHomePage> {
         keyboardType: TextInputType.visiblePassword,
         obscureText: true,
       );
+
   Widget buildSubmit(Key key) => Builder(
         builder: (context) => ButtonWidget(
           text: 'Submit',
@@ -686,23 +686,32 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: buildPass("Confirm Password"),
                 ),
                 Container(
-                  height: 108,
+                  height: 100,
+                  // color: Colors.red,
                   padding: const EdgeInsets.all(20),
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius:
                           const BorderRadius.all(Radius.circular(12.0)),
-                      border: Border.all(width: 2),
-                    ),
-                    child: DropdownButton<String>(
-                      isExpanded: true,
-                      icon: const Icon(
-                        Icons.keyboard_arrow_down_outlined,
+                      border: Border.all(
+                        width: 1,
                       ),
-                      items: items.map(buildGender).toList(),
-                      onChanged: (value) => setState(() {
-                        this.value = value;
-                      }),
+                    ),
+                    child: DropdownButtonHideUnderline(
+                      child: DropdownButton<String>(
+                        isExpanded: true,
+                        hint: const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Text("Select Gender"),
+                        ),
+                        icon: const Icon(
+                          Icons.keyboard_arrow_down_outlined,
+                        ),
+                        items: items.map(buildGender).toList(),
+                        onChanged: (value) => setState(() {
+                          gender = value;
+                        }),
+                      ),
                     ),
                   ),
                 ),
