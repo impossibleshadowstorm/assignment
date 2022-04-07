@@ -305,41 +305,6 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       );
 
-  Widget buildEmail() => Stack(
-        alignment: Alignment.centerRight,
-        children: <Widget>[
-          TextFormField(
-            maxLines: 1,
-            decoration: const InputDecoration(
-              labelText: 'Email',
-              border: OutlineInputBorder(),
-            ),
-            validator: (value) {
-              const pattern =
-                  r'(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)';
-              final regExp = RegExp(pattern);
-
-              if (value!.isEmpty) {
-                return 'Enter an email';
-              } else if (!regExp.hasMatch(value)) {
-                return 'Enter a valid email';
-              } else {
-                return null;
-              }
-            },
-            keyboardType: TextInputType.emailAddress,
-            onSaved: (value) => setState(() => email = value!),
-          ),
-          IconButton(
-            icon: const Icon(Icons.dialpad, color: const Color(0xfff96800)),
-            onPressed: () {
-              FocusScope.of(context).requestFocus(FocusNode());
-              // Your codes...
-            },
-          ),
-        ],
-      );
-
   Widget buildPassword() => TextFormField(
         maxLines: 1,
         decoration: const InputDecoration(
@@ -357,25 +322,6 @@ class _MyHomePageState extends State<MyHomePage> {
         keyboardType: TextInputType.visiblePassword,
         obscureText: true,
       );
-
-  Widget buildConfirmPassword() => TextFormField(
-        maxLines: 1,
-        decoration: const InputDecoration(
-          labelText: 'Confirm Password',
-          border: OutlineInputBorder(),
-        ),
-        validator: (value) {
-          if (value != password) {
-            return 'Password is not same';
-          } else {
-            return null;
-          }
-        },
-        onSaved: (value) => setState(() => password = value!),
-        keyboardType: TextInputType.visiblePassword,
-        obscureText: true,
-      );
-
   Widget buildSubmit(Key key) => Builder(
         builder: (context) => ButtonWidget(
           text: 'Submit',
@@ -760,7 +706,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                // buildSubmit(formKey),
               ],
             ),
           ),
