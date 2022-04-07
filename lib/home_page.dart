@@ -291,6 +291,20 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       );
 
+  final items = ["Male", "Gender"];
+  String? value;
+
+  DropdownMenuItem<String> buildGender(String item) => DropdownMenuItem(
+        value: item,
+        child: Text(
+          item,
+          style: const TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+          ),
+        ),
+      );
+
   Widget buildEmail() => Stack(
         alignment: Alignment.centerRight,
         children: <Widget>[
@@ -725,7 +739,27 @@ class _MyHomePageState extends State<MyHomePage> {
                   padding: const EdgeInsets.all(20),
                   child: buildPass("Confirm Password"),
                 ),
-
+                Container(
+                  height: 108,
+                  padding: const EdgeInsets.all(20),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius:
+                          const BorderRadius.all(Radius.circular(12.0)),
+                      border: Border.all(width: 2),
+                    ),
+                    child: DropdownButton<String>(
+                      isExpanded: true,
+                      icon: const Icon(
+                        Icons.keyboard_arrow_down_outlined,
+                      ),
+                      items: items.map(buildGender).toList(),
+                      onChanged: (value) => setState(() {
+                        this.value = value;
+                      }),
+                    ),
+                  ),
+                ),
                 // buildSubmit(formKey),
               ],
             ),
