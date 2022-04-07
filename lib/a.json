@@ -1,0 +1,109 @@
+{
+    "status": true,
+    "message": {
+        "EN": "Data fetched successfully",
+        "HI": "\u0921\u0947\u091f\u093e \u0938\u092b\u0932\u0924\u093e\u092a\u0942\u0930\u094d\u0935\u0915 \u0932\u093e\u092f\u093e \u0917\u092f\u093e"
+    },
+    "error_code": null,
+    "error_msg": null,
+    "data": [
+        {
+            "id": 1,
+            "name": {
+                "EN": "Fertilizers",
+                "HI": "\u0909\u0930\u094d\u0935\u0930\u0915"
+            },
+            "icon": "https://anaajapp.com/public/storage/categories/icons//78rq2sMPTbbI2VV6EVsLyJR8C9EblRJgboeuQ3vi.png",
+            "banner": null,
+            "bgcolor": "0xFFd92727"
+        },
+        {
+            "id": 2,
+            "name": {
+                "EN": "Fungicides",
+                "HI": "\u092b\u092b\u0942\u0902\u0926\u0940\u0928\u093e\u0936\u0915"
+            },
+            "icon": "https://anaajapp.com/public/storage/categories/icons//FGXGxknYa5zTjIUWTb6MltdbxQSNhFQcGENeR1je.png",
+            "banner": null,
+            "bgcolor": "0xFF806347"
+        },
+        {
+            "id": 3,
+            "name": {
+                "EN": "Insecticides",
+                "HI": "\u0915\u0940\u091f\u0928\u093e\u0936\u0915"
+            },
+            "icon": "https://anaajapp.com/public/storage/categories/icons//a0nqmerUFbaofQ6WOzqdlXcxOa0p4DDEoTp1igtm.png",
+            "banner": null,
+            "bgcolor": "0xFFff7f00"
+        },
+        {
+            "id": 4,
+            "name": { "EN": "Seeds", "HI": "\u092c\u0940\u091c" },
+            "icon": "https://anaajapp.com/public/storage/categories/icons//ggH2eCdUFh1Pj4JEa0RKu7ek34rIEShotgD6oZxR.png",
+            "banner": null,
+            "bgcolor": "0xFF59b822"
+        },
+        {
+            "id": 7,
+            "name": {
+                "EN": "Herbicide",
+                "HI": "\u0916\u0930\u092a\u0924\u0935\u093e\u0930 \u0928\u093e\u0936\u0915"
+            },
+            "icon": "https://anaajapp.com/public/storage/categories/icons//mAJvLUWktNksh2xV1sNlpv6hpZMnCh6eGMYV1MCD.png",
+            "banner": null,
+            "bgcolor": "0xFF6b0d20"
+        },
+        {
+            "id": 8,
+            "name": {
+                "EN": "Plant Growth Promoter",
+                "HI": "\u092a\u094d\u0932\u093e\u0902\u091f \u0917\u094d\u0930\u094b\u0925 \u092a\u094d\u0930\u092e\u094b\u091f\u0930"
+            },
+            "icon": "https://anaajapp.com/public/storage/categories/icons//1qqcgltEXVw6JQuVUnIWUZyMQZLqKt9I1nowPx5a.png",
+            "banner": null,
+            "bgcolor": "0xFFee9696"
+        },
+        {
+            "id": 9,
+            "name": {
+                "EN": "Organic Manure",
+                "HI": "\u091c\u0948\u0935\u093f\u0915 \u0916\u093e\u0926"
+            },
+            "icon": "https://anaajapp.com/public/storage/categories/icons//JMkfSIBLJQlgOcEkSIp8b57zyKAMfMKRu2JieVJ7.png",
+            "banner": null,
+            "bgcolor": "0xFF000470"
+        },
+        {
+            "id": 10,
+            "name": {
+                "EN": "Bactericide",
+                "HI": "\u092c\u0947\u0915\u091f\u0940\u0930\u093f\u092f\u093e \u0938\u093e\u0907\u0921"
+            },
+            "icon": "https://anaajapp.com/public/storage/categories/icons//h5oasQDE9GZMVVugiiVxfVdBzZtmFKd1WYGvv3BS.png",
+            "banner": null,
+            "bgcolor": "0xFF8700f5"
+        },
+        {
+            "id": 13,
+            "name": {
+                "EN": "Agriculture Equipment",
+                "HI": "\u0915\u0943\u0937\u093f \u0909\u092a\u0915\u0930\u0923"
+            },
+            "icon": "https://anaajapp.com/public/storage/categories/icons//8VoANoyxvXrLyRNLrVQpbNTnoc5v6A1VPKnwSAu1.jpg",
+            "banner": null,
+            "bgcolor": "0xFF6b0d20"
+        },
+        {
+            "id": 14,
+            "name": {
+                "EN": "ADJUVANTS",
+                "HI": "\u090f\u0921\u091c\u0941\u0935\u0947\u0902\u0924\u0938"
+            },
+            "icon": "https://anaajapp.com/public/storage/categories/icons//9Lv1lOsSL8JmrXoEMwLMoJOmMt2HnRM9waVpNJi9.jpg",
+            "banner": null,
+            "bgcolor": "0xFF6b0d20"
+        }
+    ],
+    "meta_params": null
+}
