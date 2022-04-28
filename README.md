@@ -1,5 +1,8 @@
 # dev_assignment
 
+![xd](https://user-images.githubusercontent.com/67030264/165725553-b1c74c75-4d51-4d26-8462-084ee306ac76.png)
+
+
 Here is a 1 Page UI that we want you to build in Flutter(Dart). There will be 2 API used one for displaying the service list and the second is on click on the "Submit" button "submit_details" Api will call. On submit button click, call API, and according to API response "status" shows the response message in the toast.
 
 XD design link.
